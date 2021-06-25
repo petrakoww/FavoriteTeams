@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/WcfServiceLibrary1" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ApplicarionService.DTOs" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/Data.Entities" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTeams_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeams" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTeams_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTeamById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTeamById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTeamByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostTeam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutTeam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteTeam_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTeam" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteTeam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteTeamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFans_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFans" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFansResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFansById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFansById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetFansById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFansByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostFan_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostFan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostFan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostFanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutFan_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutFan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutFan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutFanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteFan_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFan" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteFan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteFanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReviews_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviews" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReviews_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReviewsById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewsById" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetReviewsById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewsByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:PostReview" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PostReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PostReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutReview" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PutReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutReviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteReview_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReview" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteReview_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteReviewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeams">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTeams" message="tns:IService1_GetTeams_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTeamsResponse" message="tns:IService1_GetTeams_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTeamById" message="tns:IService1_GetTeamById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTeamByIdResponse" message="tns:IService1_GetTeamById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PostTeam" message="tns:IService1_PostTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PostTeamResponse" message="tns:IService1_PostTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutTeam" message="tns:IService1_PutTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutTeamResponse" message="tns:IService1_PutTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTeam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteTeam" message="tns:IService1_DeleteTeam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteTeamResponse" message="tns:IService1_DeleteTeam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFans">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetFans" message="tns:IService1_GetFans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetFansResponse" message="tns:IService1_GetFans_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFansById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetFansById" message="tns:IService1_GetFansById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetFansByIdResponse" message="tns:IService1_GetFansById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostFan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PostFan" message="tns:IService1_PostFan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PostFanResponse" message="tns:IService1_PostFan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutFan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutFan" message="tns:IService1_PutFan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutFanResponse" message="tns:IService1_PutFan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteFan" message="tns:IService1_DeleteFan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteFanResponse" message="tns:IService1_DeleteFan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReviews">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetReviews" message="tns:IService1_GetReviews_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetReviewsResponse" message="tns:IService1_GetReviews_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReviewsById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetReviewsById" message="tns:IService1_GetReviewsById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetReviewsByIdResponse" message="tns:IService1_GetReviewsById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PostReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PostReview" message="tns:IService1_PostReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PostReviewResponse" message="tns:IService1_PostReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PutReview" message="tns:IService1_PutReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PutReviewResponse" message="tns:IService1_PutReview_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReview">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteReview" message="tns:IService1_DeleteReview_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteReviewResponse" message="tns:IService1_DeleteReview_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeams">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTeams" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTeamById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTeamById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostTeam">
+      <soap:operation soapAction="http://tempuri.org/IService1/PostTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutTeam">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteTeam">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteTeam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFans">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetFans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFansById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetFansById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostFan">
+      <soap:operation soapAction="http://tempuri.org/IService1/PostFan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutFan">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutFan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteFan">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteFan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReviews">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetReviews" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetReviewsById">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetReviewsById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PostReview">
+      <soap:operation soapAction="http://tempuri.org/IService1/PostReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutReview">
+      <soap:operation soapAction="http://tempuri.org/IService1/PutReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteReview">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteReview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary1/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

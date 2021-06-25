@@ -1,0 +1,15 @@
+C:\Users\vasil\source\repos\rp\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\Repository.dll.config
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\Repository.dll
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\Repository.pdb
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\Data.dll
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\EntityFramework.dll
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\Data.pdb
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\Data.dll.config
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\EntityFramework.xml
+C:\Users\vasil\source\repos\rp\Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vasil\source\repos\rp\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\vasil\source\repos\rp\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\vasil\source\repos\rp\Repository\obj\Debug\Repository.dll
+C:\Users\vasil\source\repos\rp\Repository\obj\Debug\Repository.pdb
